@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Lobster+Two&family=Patua+One&family=Rubik&family=Montserrat&family=Sniglet&display=swap");
+
+/* * {
+  font-family: "Montserrat", sans-serif;
+} */
+
+:root {
+  --Montserrat: "Montserrat", cursive;
+  --Snigle-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua+One", cursive;
+  --Lobster: "Lobster+Two", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(55deg, #ea1f25, #faaf19, #313376, #ea1f25);
+  --light-gray: rgb(255, 255, 255, 0.2);
+}
+
+body {
+  /* background: #dd2476; */
+  background: var(--bggradient);
+}
+
+header,
+section {
+  overflow-x: hidden;
+}
+
+header a {
+  font-family: var(--Montserrat);
+}
+
+header .navbar-light .navbar-brand span {
+  color: #313376;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-left: 2vh;
+}
+
+header .navbar-light .navbar-brand img {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+header .navbar-light .navbar-brand:focus,
+header .navbar-light .navbar-brand:hover {
+  color: #000;
+}
+
+header .navbar-nav a {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #faaf19;
+}
+
+header .navbar-nav a:focus,
+header .navbar-nav a:hover {
+  scale: 1.1;
+  color: #cd811d;
+  text-shadow: 0px 0px 8px rgba(179, 85, 85, 0.2);
+}
+
+header .carousel-caption {
+  bottom: 220px;
+  z-index: 2;
+}
+
+header .carousel-inner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1005px;
+  top: 0;
+  left: 0;
+  background: rgba(136, 129, 129, 0.7);
+  z-index: 1;
+}
+
+header .w-100 {
+  width: 100% !important;
+  height: 75vh;
+}
+
+header .carousel-caption h5 {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /* margin-top: 25px; */
+  font-weight: bold;
+  font-family: var(--Rubik);
+}
+
+header .carousel-caption p {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #faaf19;
+  font-family: var(--Rubik);
+  padding-top: 10px;
+}
+
+header .px-wide {
+  margin-top: 20px;
+  margin: 20px 10px 20px 10px;
+}
+
+main .card {
+  font-family: var(--Rubik);
+  font-size: 15px;
+  background-color: #d8e5ec;
+}
+
+.slick-prev {
+  left: 1% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 1% !important;
+  z-index: 1;
+}
+
+.slick-list {
+  margin-left: 3% !important;
+  margin-right: 3% !important;
+}
+
+main .card-img-top {
+  height: 150px;
+}
+
+main .card {
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+main .card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+main .d-flex {
+  padding: 10px;
+}
+
+main ul {
+  list-style: none;
+}
+
+main ul li {
+  margin-top: 8px;
+  padding: 0;
+  text-align: left;
+}
+
+main .section-header h2 {
+  text-transform: uppercase;
+  color: #71c1e6;
+}
+
+main .section-header h3 {
+  /* text-transform: uppercase; */
+  color: #6e7579;
+  font-family: var(--Patua);
+}
+
+main container row .col-lg-2 {
+  display: inline-block !important;
+}
+
+.twitter-timeline {
+  /* width: "100%" !important; */
+  margin-top: 10px !important;
+  margin-bottom: 15px !important;
+}
+
+main .headbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .section-1 {
+  margin-bottom: 3%;
+  margin-left: 10%;
+}
+
+main .section-1 .col-sm-9 {
+  border-bottom: 2px solid #71c1e6;
+}
+
+.datepicker .btn-primary {
+  background-color: #71c1e6;
+  border-color: #71c1e6;
+}
+
+.datepicker .inpudiv {
+  position: relative;
+}
+
+.datepicker .inpudiv input {
+  /* height: 50%; */
+  width: 25%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+  background-color: #d8e5ec;
+  text-align: center;
+  font-family: var(--Rubik);
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/* .datepicker .offset-sm-2 {
+  position: relative;
+}
+
+.datepicker .offset-sm-2 input {
+  width: 25%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+  background-color: #d8e5ec;
+  text-align: center;
+} */
+
+.react-datepicker__input-container input {
+  background-color: #d8e5ec !important;
+  padding: 3% !important;
+  width: 95% !important;
+  border-radius: 10px !important;
+  border: none !important;
+  margin: 10px !important;
+  box-shadow: 2px 2px 2px !important;
+  font-family: var(--Montserrat) !important;
+}
+
+.datepicker .col-sm-2 {
+  display: flex;
+  justify-content: left;
+}
+
+.react-datepicker__month-container,
+.react-datepicker__current-month,
+.react-datepicker__day-name {
+  font-family: var(--Montserrat) !important;
+}
+
+.react-datepicker__header {
+  background-color: #d8e5ec !important;
+}
+
+.dtpickerbtn {
+  margin-top: 10%;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.815);
+  overflow-x: hidden;
+  padding: 4vmin 4vmin;
+  margin-top: 10%;
+}
+
+footer .w-100 {
+  width: 30% !important;
+  /* height: 20px; */
+  transform: scale(0.75);
+}
+
+footer #imgdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vmax;
+}
+
+footer .col-md-12 #social {
+  margin-top: -2.5vmin;
+}
+
+footer .column a {
+  /* margin-left: 0.8vmax; */
+  padding: 0 0.8vmin;
+}
