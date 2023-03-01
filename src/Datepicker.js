@@ -10,8 +10,10 @@ class Datepicker extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      startDate: new Date(new Date().getFullYear(), new Date().getMonth(), 1),  //new Date()  
-      endDate: new Date(),
+      // startDate: new Date(new Date().getFullYear(), new Date().getMonth(), 1),  //new Date()  
+      // endDate: new Date(),
+      startDate: "",  //new Date()  
+      endDate: "",
       count: 25
     };
 
@@ -43,10 +45,14 @@ class Datepicker extends Component {
     console.log(this.state.endDate)
   }
 
-  clearDates = () => {  
+  clearDates = () => {
+    this.props.getDates("","",25)
+
     this.setState({  
-      startDate: new Date(new Date().getFullYear(), new Date().getMonth(), 1),
-      endDate: new Date(),
+      // startDate: new Date(new Date().getFullYear(), new Date().getMonth(), 1),
+      // endDate: new Date(),
+      startDate: "",
+      endDate: "",
       count: 25
     })
   }

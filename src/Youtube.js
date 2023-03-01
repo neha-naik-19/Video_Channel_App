@@ -39,12 +39,21 @@ class Youtube extends Component {
     // const channelId = "UC8bbAK-AOGGYaOvJHdzxopQ";
     const channelId = "UCw-c4rIPSt0EbGUoWoHVw-g";
 
-    const publishedAfter = format(add(startDt,{days: -1}), 'yyyy-MM-dd').toString() + 'T00:00:00Z';
-    const publishedBefore = format(add(endDt,{days: 1}), 'yyyy-MM-dd').toString() + 'T00:00:00Z';
+    console.log('log :: ', startDt, ': ',endDt,);
 
-    const finalURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=${channelId}&part=snippet,id&order=date&publishedAfter=${publishedAfter}&publishedBefore=${publishedBefore}&maxResults=${num}`;
+    let finalURL = "";
 
-    // console.log(finalURL);
+    if(startDt == "" && endDt == ""){
+      finalURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=${channelId}&part=snippet,id&order=date&maxResults=${num}`;
+    }
+    else{
+      const publishedAfter = format(add(startDt,{days: -1}), 'yyyy-MM-dd').toString() + 'T00:00:00Z';
+      const publishedBefore = format(add(endDt,{days: 1}), 'yyyy-MM-dd').toString() + 'T00:00:00Z';
+
+      finalURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=${channelId}&part=snippet,id&order=date&publishedAfter=${publishedAfter}&publishedBefore=${publishedBefore}&maxResults=${num}`;
+    }
+  
+    console.log(finalURL);
 
     fetch(finalURL)
       .then((response) => response.json())
@@ -80,7 +89,8 @@ class Youtube extends Component {
   }
 
   componentDidMount() {
-    this.clicked(new Date(new Date().getFullYear(), new Date().getMonth(), 1),new Date(),Number(25));
+    // this.clicked(new Date(new Date().getFullYear(), new Date().getMonth(), 1),new Date(),Number(25));
+    this.clicked("", "",Number(25));
   }
 
   intervals = [
@@ -93,6 +103,8 @@ class Youtube extends Component {
   ];
 
   timeSince = (date) => {
+    console.log('date :: ', date);
+
     const seconds = Math.floor((Date.now() - date.getTime()) / 1000);
     const interval = this.intervals.find((i) => i.seconds < seconds);
     const count = Math.floor(seconds / interval.seconds);
@@ -388,7 +400,7 @@ class Youtube extends Component {
                               width="100%"
                               height="100%"
                               src={link.link}
-                              onInferredClick={() => alert('You clicked')}
+                              // onInferredClick={() => alert('You clicked')}
                               // title="Testing Video 1"
                               frameBorder="0"
                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -437,7 +449,7 @@ class Youtube extends Component {
                   <a  href="https://twitter.com/csisbitsgoa?ref_src=twsrc%5Etfw" target="_blank">
                     <i className="fa fa-twitter text-light"></i>
                   </a>
-                  <a  href="https://www.bits-pilani.ac.in/goa/" target="_blank">
+                  <a  href="https://www.linkedin.com/company/department-of-csis-bits-pilani-goa-campus/?originalSubdomain=in" target="_blank">
                     <i className="fa fa-linkedin text-light"></i>
                   </a>
                 </div>
