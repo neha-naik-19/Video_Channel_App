@@ -234,150 +234,148 @@ class Youtube extends Component {
                     </a>
                   </li>
                 </ul>
-                {/* <form className="d-flex" role="search">
-                  <input
-                    className="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button className="btn btn-outline-success" type="submit">
-                    Search
-                  </button>
-                </form> */}
               </div>
             </div>
           </nav>
 
           {/* carousel */}
-          <div className="px-wide">
-            <div
-              id="carouselExampleCaptions"
-              className="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div className="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide-to="0"
-                  className="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide-to="3"
-                  aria-label="Slide 4"
-                ></button>
+          <div className="row">
+            <div className="col-sm-12">
+              <div className="px-wide">
+                <div
+                  id="carouselExampleCaptions"
+                  className="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div className="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="0"
+                      className="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="3"
+                      aria-label="Slide 4"
+                    ></button>
+                  </div>
+                  <div className="carousel-inner">
+                    <div className="carousel-item active">
+                      <img
+                        src={process.env.PUBLIC_URL + "/computer_11.jpg"}
+                        className="d-block w-100"
+                        alt="..."
+                      />
+                      <div className="carousel-caption">
+                        <a className="navbar-brand" href="https://www.bits-pilani.ac.in/goa/ComputerScienceInformationsSystems/ComputerScienceandInformationSystems" target="_blank">
+                          {/* <h5>Computer Science & Information Systems</h5> */}
+                          <span id='heading'>Computer Science & Information Systems</span>
+                        </a>
+                        <p>VIDEO & PHOTO GALLERY</p>
+                      </div>
+                    </div>
+                    <div className="carousel-item">
+                      <img
+                        src={process.env.PUBLIC_URL + "/computer_motherboard_2.jpg"}
+                        className="d-block w-100"
+                        alt="..."
+                      />
+                      <div className="carousel-caption">
+                        <a className="navbar-brand" href="https://www.bits-pilani.ac.in/goa/ComputerScienceInformationsSystems/ComputerScienceandInformationSystems" target="_blank">
+                          {/* <h5>Computer Science & Information Systems</h5> */}
+                          <span id='heading'>Computer Science & Information Systems</span>
+                        </a>
+                        <p>VIDEO & PHOTO GALLERY</p>
+                      </div>
+                    </div>
+                    <div className="carousel-item">
+                      <img
+                        src={process.env.PUBLIC_URL + "/computer_cpu_3.jpg"}
+                        className="d-block w-100"
+                        alt="..."
+                      />
+                      <div className="carousel-caption">
+                        <a className="navbar-brand" href="https://www.bits-pilani.ac.in/goa/ComputerScienceInformationsSystems/ComputerScienceandInformationSystems" target="_blank">
+                          {/* <h5>Computer Science & Information Systems</h5> */}
+                          <span id='heading'>Computer Science & Information Systems</span>
+                        </a>
+                        <p>VIDEO & PHOTO GALLERY</p>
+                      </div>
+                    </div>
+                    <div className="carousel-item">
+                      <img
+                        src={process.env.PUBLIC_URL + "/computer_board_4.jpg"}
+                        className="d-block w-100"
+                        alt="..."
+                      />
+                      <div className="carousel-caption">
+                        <a className="navbar-brand" href="https://www.bits-pilani.ac.in/goa/ComputerScienceInformationsSystems/ComputerScienceandInformationSystems" target="_blank">
+                          {/* <h5>Computer Science & Information Systems</h5> */}
+                          <span id='heading'>Computer Science & Information Systems</span>
+                        </a>
+                        <p>VIDEO & PHOTO GALLERY</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    className="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      className="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span className="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    className="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      className="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span className="visually-hidden">Next</span>
+                  </button>
+                </div>
               </div>
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <img
-                    src={process.env.PUBLIC_URL + "/computer_11.jpg"}
-                    className="d-block w-100"
-                    alt="..."
-                  />
-                  <div className="carousel-caption">
-                    <a className="navbar-brand" href="https://www.bits-pilani.ac.in/goa/ComputerScienceInformationsSystems/ComputerScienceandInformationSystems" target="_blank">
-                      <h5>Computer Science & Information Systems</h5>
-                    </a>
-                    <p>VIDEO & PHOTO GALLERY</p>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src={process.env.PUBLIC_URL + "/computer_motherboard_2.jpg"}
-                    className="d-block w-100"
-                    alt="..."
-                  />
-                  <div className="carousel-caption">
-                    <a className="navbar-brand" href="https://www.bits-pilani.ac.in/goa/ComputerScienceInformationsSystems/ComputerScienceandInformationSystems" target="_blank">
-                      <h5>Computer Science & Information Systems</h5>
-                    </a>
-                    <p>VIDEO & PHOTO GALLERY</p>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src={process.env.PUBLIC_URL + "/computer_cpu_3.jpg"}
-                    className="d-block w-100"
-                    alt="..."
-                  />
-                  <div className="carousel-caption">
-                    <a className="navbar-brand" href="https://www.bits-pilani.ac.in/goa/ComputerScienceInformationsSystems/ComputerScienceandInformationSystems" target="_blank">
-                      <h5>Computer Science & Information Systems</h5>
-                    </a>
-                    <p>VIDEO & PHOTO GALLERY</p>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src={process.env.PUBLIC_URL + "/computer_board_4.jpg"}
-                    className="d-block w-100"
-                    alt="..."
-                  />
-                  <div className="carousel-caption">
-                    <a className="navbar-brand" href="https://www.bits-pilani.ac.in/goa/ComputerScienceInformationsSystems/ComputerScienceandInformationSystems" target="_blank">
-                      <h5>Computer Science & Information Systems</h5>
-                    </a>
-                    <p>VIDEO & PHOTO GALLERY</p>
-                  </div>
-                </div>
-              </div>
-              <button
-                className="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev"
-              >
-                <span
-                  className="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button
-                className="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next"
-              >
-                <span
-                  className="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="visually-hidden">Next</span>
-              </button>
             </div>
           </div>
         </header>
 
         {/* main */}
         <main>
-          <section className="section-1 pt-4 container">
+          {/* <section className="section-1 pt-4 container">
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-12">
                     <Datepicker getDates={this.getDates} />
                 </div>
             </div>
-          </section>
+          </section> */}
           <section className="section-2 video container">
+            <Datepicker getDates={this.getDates} />
             <div className="row">
-              <div className="col-md-12">
+              <div className="col-sm-12">
                 <div className="section-header text-center pb-4">
                     <h2>video</h2>
                     <h3 className={this.state.resultyt.length > 0 ? 'hide' : 'show'}>Video not available. Please search within date range</h3>
@@ -385,11 +383,10 @@ class Youtube extends Component {
               </div>
             </div>
             <div className="row">
-              <div className="col-lg-10">
+              <div className="col-sm-10">
                 {/* Column */}
                 {/* {contents} */}
                 <div className="row">
-            
                   <Slider {...settings}>
                     {this.state.resultyt.map((link, i) => {
                       // console.log(i, link.link);
@@ -417,7 +414,7 @@ class Youtube extends Component {
                  
                 </div>
               </div>
-              <div className="col-lg-2">
+              <div className="col-sm-2 twitter">
                   <TwitterTimelineEmbed 
                     sourceType="profile"
                     screenName="csisbitsgoa"

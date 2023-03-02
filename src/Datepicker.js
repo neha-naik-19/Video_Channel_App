@@ -71,7 +71,7 @@ class Datepicker extends Component {
   render() {
     return (
       <div className="row datepicker">
-        <div className="col-sm-3">
+        <div className="col-md-3 col-sm-6">
           <ReactDatePicker
             // selected={this.state.date}
             // onChange={this.handleChange}
@@ -92,7 +92,7 @@ class Datepicker extends Component {
             maxDate={new Date()}
           />
         </div>
-        <div className="col-sm-3">
+        <div className="col-md-3 col-sm-6">
           <ReactDatePicker
             selected={ this.state.endDate }  
             onChange={ this.endHandleChange }
@@ -107,7 +107,7 @@ class Datepicker extends Component {
             minDate={this.state.startDate}
           />
         </div>
-        <div className="col-sm-2 inpudiv">
+        <div className="col-md-2 col-sm-6">
           <input
             type="text"
             // placeholder="Count"
@@ -117,7 +117,7 @@ class Datepicker extends Component {
             value={this.state.count}
           />
         </div>
-        <div className="col-sm-2 offset-sm-2">
+        <div className="col-md-2 col-sm-6">
           <div className="row">
             <div className="col-sm-5">
               <button type="button" className="btn btn-primary" onClick={() => this.props.getDates(this.state.startDate,this.state.endDate,this.state.count)}>
@@ -131,6 +131,7 @@ class Datepicker extends Component {
             </div>
           </div>
         </div>
+        <hr />
       </div>
     );
   }
