@@ -107,7 +107,7 @@ class Datepicker extends Component {
             minDate={this.state.startDate}
           />
         </div>
-        <div className="col-md-2 col-sm-6">
+        {/* <div className="col-md-2 col-sm-6">
           <input
             type="text"
             // placeholder="Count"
@@ -116,15 +116,25 @@ class Datepicker extends Component {
             onChange={this.handleChange}
             value={this.state.count}
           />
-        </div>
-        <div className="col-md-2 col-sm-6">
+        </div> */}
+        <div className="col-md-4 col-sm-6">
           <div className="row">
-            <div className="col-sm-5">
+          <div className="col-8">
+          <input
+            type="text"
+            // placeholder="Count"
+            aria-label="Count"
+            maxLength="2"
+            onChange={this.handleChange}
+            value={this.state.count}
+          />
+          </div>
+            <div className="col-2">
               <button type="button" className="btn btn-primary" onClick={() => this.props.getDates(this.state.startDate,this.state.endDate,this.state.count)}>
                 <FontAwesomeIcon icon={faSearch} style={{color: '#d8e5ec'}} /> 
               </button>
             </div>
-            <div className="col-sm-5">
+            <div className="col-2">
               <button type="button" className="btn btn-primary" onClick={() => this.clearDates()}>
                 <FontAwesomeIcon icon={faCalendar} style={{color: '#d8e5ec'}} /> 
               </button>

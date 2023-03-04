@@ -223,8 +223,8 @@ main .container .row .twitter {
 
 .datepicker input {
   margin-left: -90%;
-  margin-top: 10%;
-  border-radius: 2px;
+  margin-top: 7%;
+  border-radius: 5px;
   background-color: #d8e5ec;
   text-align: center;
   width: 20%;
@@ -393,12 +393,13 @@ footer .column a {
     text-align: center;
   }
 
-  header .carousel-caption {
-    bottom: 50%;
+  header .navbar-light .navbar-brand span {
+    font-size: 12px;
   }
 
   header .carousel-caption #heading {
-    font-size: 15px;
+    font-size: 10px;
+    text-align: center;
     width: 100%;
   }
 
@@ -418,12 +419,17 @@ footer .column a {
     text-align: center;
   }
 
+  header .navbar-light .navbar-brand span {
+    font-size: 12px;
+  }
+
   header .carousel-caption {
     bottom: 50%;
   }
 
   header .carousel-caption #heading {
-    font-size: 10px;
+    font-size: 5px;
+    text-align: center;
     width: 100%;
   }
 
