@@ -13,7 +13,7 @@ root.render(
   // <App />
   // </React.StrictMode>
 
-  <Router basename={"/gallery/video"}>
+  <Router basename={"/videogallery"}>
     <Routes>
       <Route path="/" exact strict element={<App />} />
     </Routes>

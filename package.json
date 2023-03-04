@@ -1,6 +1,7 @@
 {
   "name": "videocahnnelapp",
   "version": "0.1.0",
+  "homepage":"/videogallery",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
